@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-A-Sketch</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="https://kit.fontawesome.com/60b01c9dde.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Etch-A-Sketch</h1>
+    <div class="sketch-wrapper">
+      <div class="settings-container">
+        <input type="color" id="color-picker" value="#2f00ec">
+        <button class="color-picker-btn" id="color-mode">Color-mode</button>
+        <button class="rainbow-btn" id="rainbow-mode">Rainbow-mode</button>
+        <button class="eraser-btn" id="erase">Eraser</button>
+        <button class="clear-btn" id="clear">Clear</button>
+        <div class="dimensions">
+          <label for="dimensions" class="dimensions-label">16x16</label>
+          <input type="range" name="dimensions" id="dimensions" min="1" max="60" value="16">
+        </div>
+      </div>
+      <div class="grid-container"></div>
+    </div>
+    <footer>
+      <a href="https://github.com/Simplypurr/" target="_blank">
+        <i class="fab fa-github">
+        </i>
+      </a>
+    </footer>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
